@@ -1,12 +1,16 @@
-/*
-* Theme Name: 		   Photographe Event
- * Text Domain: 	   photographeEvent
- * Version:            1.0
- * Author:             Sullyvan LERICHE
 
+/*
+Theme Name: Photographe Event
+Theme URI: https://www.cookinfamily.fr
+Author: Sullyvan Leriche
+Author URI: https://openclassrooms.com
+Description: Thème pour le cours "Perfectionnez-vous sur WordPress"
+Version: 1.0
+Tags: openclassrooms, cookinfamily, cours
+Text Domain: cookinfamily
 */
 
 
-.main-menu  {
-    background-color: red;
+.nav  {
+    background-color: red !important;
 }
