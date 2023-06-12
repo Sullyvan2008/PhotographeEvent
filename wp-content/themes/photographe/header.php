@@ -11,7 +11,7 @@
             <?php
                 // Afficher le menu principal
                 wp_nav_menu( array(
-                    'theme_location' => 'header',
+                    'theme_location' => 'primary-menu',
                     'container' => 'ul',
                     'menu_class' => 'main-menu',
                 ) );
