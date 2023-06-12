@@ -25,7 +25,7 @@
             'menu_class' => 'main-menu',
         ) );
         ?>
-        <button id="myBtn">Contact</button>
+        <button id="myBtn">CONTACT</button>
     </nav>
 </header>
 

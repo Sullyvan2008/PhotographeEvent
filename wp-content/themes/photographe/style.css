@@ -39,21 +39,39 @@ Version: 1.0
     font-style: normal;
   }
         
+  .container {
+    max-width: 1440px;
+  }
+  html {
+    margin-top: 0px !important;
+    max-width: 1440px;
+  }
+  body {
+	margin: 0;
+}
 
+
+  
 /* Styles pour l'en-tête */
 header {
     background-color: white;
-    padding: 20px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  
-  /* Styles pour le logo ou titre du site */
-  .site-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav button {
+    border: none; 
+    background: none;
+    cursor: pointer;
   }
   
   /* Styles pour le menu principal */
@@ -72,7 +90,12 @@ header {
     margin-left: 0;
   }
   
-  .main-menu a {
+  .main-menu a,
+  nav button {
+    font-family: 'Space Mono';
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: capitalize;
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
