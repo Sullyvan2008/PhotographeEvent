@@ -8,4 +8,4 @@ function photographe_supports()
     register_nav_menu('header', 'En tête du menu');
 }
 
-add_action('after_setuptheme', 'photographe_supports');
+add_action('after_setup_theme', 'photographe_supports');
