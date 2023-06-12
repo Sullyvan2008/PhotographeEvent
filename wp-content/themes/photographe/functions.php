@@ -1,6 +1,6 @@
 <?php
 // Ajouter les fonctionnalités du thème
-function photographe_setup() {
+function photographe_supports() {
     // Activer la prise en charge des images mises en avant
     add_theme_support( 'post-thumbnails' );
     
@@ -12,7 +12,7 @@ function photographe_setup() {
         'primary-menu' => 'Menu principal',
     ) );
 }
-add_action( 'after_setup_theme', 'photographe_setup' );
+add_action( 'after_setup_theme', 'photographe_supports' );
 
 // Enqueue les scripts et les styles du thème
 function photographe_enqueue_scripts() {
