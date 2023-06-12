@@ -11,6 +11,14 @@ function photographe_supports() {
     register_nav_menus( array(
         'primary-menu' => 'Menu principal',
     ) );
+
+    // Activer la prise en charge du logo du site
+    add_theme_support( 'custom-logo', array(
+        'height'      => 40,
+        'width'       => 160,
+        'flex-width'  => true,
+        'flex-height' => true,
+    ) );
 }
 add_action( 'after_setup_theme', 'photographe_supports' );
 

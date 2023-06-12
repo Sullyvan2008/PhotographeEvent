@@ -11,6 +11,9 @@ Version: 1.0
 header {
     background-color: #f9f9f9;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   /* Styles pour le logo ou titre du site */
@@ -29,11 +32,11 @@ header {
   
   .main-menu li {
     display: inline-block;
-    margin-right: 15px;
+    margin-left: 15px;
   }
   
-  .main-menu li:last-child {
-    margin-right: 0;
+  .main-menu li:first-child {
+    margin-left: 0;
   }
   
   .main-menu a {

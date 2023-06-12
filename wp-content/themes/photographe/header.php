@@ -6,16 +6,27 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header>
-        <nav>
-            <?php
-                // Afficher le menu principal
-                wp_nav_menu( array(
-                    'theme_location' => 'header',
-                    'container' => 'ul',
-                    'menu_class' => 'main-menu',
-                ) );
-            ?>
-        </nav>
-    </header>
+<header>
+<?php get_template_part( 'template-parts/contact' ); ?>
+
+    <div class="site-logo">
+        <?php
+        // Afficher le logo
+        the_custom_logo();
+        ?>
+    </div>
+
+    <nav>
+        <?php
+        // Afficher le menu principal
+        wp_nav_menu( array(
+            'theme_location' => 'primary-menu',
+            'container' => 'ul',
+            'menu_class' => 'main-menu',
+        ) );
+        ?>
+        <a id="myBtn" href="#">Contact</a>
+    </nav>
+</header>
+
     <div id="content">
