@@ -23,3 +23,10 @@ function photographe_enqueue_scripts() {
     wp_enqueue_script( 'photographe-custom-script', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'photographe_enqueue_scripts' );
+
+// Afficher la barre d'administration de WordPress
+function show_admin_bar_on_frontend() {
+    return true;
+}
+add_filter( 'show_admin_bar', 'show_admin_bar_on_frontend' );
+
