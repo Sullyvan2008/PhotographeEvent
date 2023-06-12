@@ -1,1 +1,1 @@
-Bonjour tout le monde
+<?php get_header()?>
