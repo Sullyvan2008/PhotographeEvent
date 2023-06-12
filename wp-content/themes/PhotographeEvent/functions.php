@@ -6,6 +6,6 @@ function theme_register_menus() {
       'primary-menu' => 'header',
     ) );
   }
-  add_action( 'after_setup_theme', 'photographeevent_register_menus' );
+  add_action( 'after_setup_theme', 'theme_register_menus' );
   
 ?>
