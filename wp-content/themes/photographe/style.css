@@ -49,6 +49,10 @@ Version: 1.0
     font-style: normal;
 }
 
+body {
+    margin:auto;
+}
+
 .container {
     max-width: 1440px;
     padding: 0px !important;
@@ -436,6 +440,47 @@ justify-content: space-between;
     padding: 50px 0;
     width: 1148px;
     margin: auto;
+}
+
+
+/* ACCUEIL */ 
+
+.hero-photo {
+    width: 100%; /* Ajuster la largeur en fonction de votre mise en page */
+    height: 100vh; /* Ajuster la hauteur en fonction de vos besoins */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Styles supplémentaires pour le contenu centré */
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Space Mono';
+    font-size: 96px;
+    font-style: italic;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    grid-gap: 20px; /* Espace entre les photos */
+    max-width: 1148px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.photo-grid img {
+    width: 564px;
+    height: 495px;
+    object-fit: cover;
 }
 
 
