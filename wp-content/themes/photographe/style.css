@@ -13,39 +13,49 @@ Version: 1.0
     src: url('fonts/SpaceMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Space Mono';
     src: url('fonts/SpaceMono-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Space Mono';
     src: url('fonts/SpaceMono-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Space Mono';
     src: url('fonts/SpaceMono-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Poppins';
     src: url('fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-        
-  .container {
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
     max-width: 1440px;
     padding: 0px !important;
-  }
+}
 
 
-  
+
 /* Styles pour l'en-tête */
 header {
     background-color: white;
@@ -53,39 +63,41 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+    width: 1148px;
+    margin: auto;
+}
 
-  nav {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 45px;
-  }
+}
 
-  nav button {
-    border: none; 
+nav button {
+    border: none;
     background: none;
     cursor: pointer;
-  }
-  
-  /* Styles pour le menu principal */
-  .main-menu {
+}
+
+/* Styles pour le menu principal */
+.main-menu {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .main-menu li {
+}
+
+.main-menu li {
     display: inline-block;
     margin-left: 45px;
-  }
-  
-  .main-menu li:first-child {
+}
+
+.main-menu li:first-child {
     margin-left: 0;
-  }
-  
-  .main-menu a,
-  nav button {
+}
+
+.main-menu a,
+nav button {
     font-family: 'Space Mono';
     font-weight: normal;
     font-size: 16px;
@@ -93,12 +105,12 @@ header {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
-  }
-  
-  .main-menu a:hover {
+}
+
+.main-menu a:hover {
     color: #ff6600;
-  }
-  
+}
+
 
 
 /* Modal Header */
@@ -111,15 +123,21 @@ header {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: auto; /* Full width */
-    height: auto; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: auto;
+    /* Full width */
+    height: auto;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
 }
 
 /* The Close Button */
@@ -138,7 +156,9 @@ header {
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
 
 /* Modal Footer */
 .modal-footer {
@@ -159,8 +179,8 @@ header {
     padding: 0;
     border: 5px solid #000000;
     width: 600px;
-    height: 770px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 98vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -169,13 +189,27 @@ header {
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 
@@ -183,26 +217,28 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 
-  .wpcf7-form label {
+.wpcf7-form label {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #000000;
-  }
-  
-  
-  .wpcf7-form-control {
+}
+
+
+.wpcf7-form-control {
     border: 1px solid black;
     width: 260px;
-  }
-  
+}
 
-  .wpcf7-submit {
-    background-color: white; /* Couleur de fond */
-    color: black; /* Couleur du texte */
+
+.wpcf7-submit {
+    background-color: white;
+    /* Couleur de fond */
+    color: black;
+    /* Couleur du texte */
     font-family: 'Space Mono';
     font-size: 14px;
     border: none;
@@ -211,14 +247,218 @@ header {
     width: 50%;
     margin-left: 30px;
 
-  }
+}
 
-  .champs {
+.champs {
     height: 40px;
-  }
-  .champs-message textarea {
+}
+
+.champs-message textarea {
     width: 40px;
     height: 140px;
+}
+
+
+/* Styles pour les flèches de navigation */
+.post-navigation .icon-arrow-left,
+.post-navigation .icon-arrow-right {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.post-navigation .icon-arrow-left {
+    margin-right: 10px;
+    /* Marge entre les flèches */
+}
+
+/* Styles pour les SVG des flèches */
+.post-navigation .icon-arrow-left::before,
+.post-navigation .icon-arrow-right::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* SVG pour la flèche de gauche */
+.post-navigation .icon-arrow-left::before {
+    background-image: url(assets/icones/gauche.svg);
+    color: #000000;
+}
+
+/* SVG pour la flèche de droite */
+.post-navigation .icon-arrow-right::before {
+    background-image: url(assets/icones/droite.svg);
+    color: black;
+}
+
+.single-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1148px;
+    margin: auto;
+}
+
+.post-thumbnail {
+    flex: 50%;
+}
+
+.taxonomy-info {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.acf-info {
+    border-bottom: 1px solid black;
+}
+
+.post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-title {
+    font-family: 'Space Mono';
+    font-size: 66px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+.taxonomy-info h2 {
+    font-family: 'Space Mono';
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.post-navigation .next-post img {
+    width: 81px;
+    height: auto;
+}
+
+
+.post-navigation {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+align-items: end;
+}
+
+.post-navigation-arrows {
+    display: flex; 
+    flex-direction: row;
+    width: 80px;
+justify-content: space-between;
+}
+
+.next-post-thumbnail img {
+    width: 80px;
+    height: auto;
+}
+
+.related-posts {
+    max-width: 1148px;
+    margin: auto;
+    padding-top: 70px;
+}
+.related-posts h3 {
+    font-size: 18px;
+    font-family: 'Space Mono';
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.related-posts-thumbnails {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.related-post img {
+    width: 564px;
+    height: 495px;
+    object-fit: cover;
   }
-  
-  
+
+.contact-navigation {
+    display: flex;
+flex-direction: row;
+align-items: center;
+max-width: 1148px;
+margin: auto;
+border-bottom: 1px solid black;
+}
+
+.photo-interest {
+    display: flex;
+flex-direction: row;
+flex: 50%;
+justify-content: space-between;
+}
+
+.photo-interest p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.photo-interest button,
+.more-photos-button {
+    background-color: #D8D8D8;
+    font-size: 12px;
+    font-family: 'Space Mono';
+    font-weight: normal;
+    border: none;
+    width: 250px;
+    padding: 16px 0;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.more-photos {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    width: 1148px;
+    margin: auto;
+}
+
+
+/* FOOTER */ 
+
+footer {
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid black;
+    margin: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+}
+
+.footer-links a {
+    font-family: 'Space Mono';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
