@@ -102,12 +102,16 @@ echo '<div class="contact-navigation">';
     <h3>Vous aimerez aussi</h3>
 
     <?php
-    // Récupérer les articles recommandés
+    // Récupérer la catégorie de l'article actuel
+    $current_category = wp_get_post_categories(get_the_ID());
+
+    // Récupérer les articles recommandés de la même catégorie
     $args = array(
         'post_type' => 'photos',
         'posts_per_page' => 2, // Nombre d'articles recommandés à afficher
         'orderby' => 'rand', // Ordonner de manière aléatoire
-        'post__not_in' => array(get_the_ID()) // Exclure l'article actuel
+        'post__not_in' => array(get_the_ID()), // Exclure l'article actuel
+        'category__in' => $current_category // Inclure seulement les articles de la même catégorie
     );
     $query = new WP_Query($args);
 
@@ -136,10 +140,13 @@ echo '<div class="contact-navigation">';
     ?>
 </div> <!-- Fermeture de la div "related-posts" -->
 
-<div class="more-photos">
-    <a href="#" class="more-photos-button">Voir plus de photos</a>
-</div>
 
+<div class="more-photos">
+<?php
+$url = get_home_url(); // Récupère l'URL de la page d'accueil
+?>
+<a href="<?php echo esc_url($url); ?>" class="more-photos-button">Voir plus de photos</a>
+</div>
 
 <?php get_footer();
 ?>

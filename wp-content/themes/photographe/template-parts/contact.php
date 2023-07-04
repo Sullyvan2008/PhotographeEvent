@@ -13,3 +13,19 @@
 </div>
 
 
+<script>
+jQuery(document).ready(function($) {
+    // Au clic sur le bouton Contact
+    $('#myContactBtn').click(function() {
+        // Récupérer la référence de la photo de la page active
+        var reference = '<?php echo get_post_meta(get_the_ID(), "reference", true); ?>';
+
+        // Remplir le champ Réf photo dans la modale avec la référence
+        $('#ref-photo-input').val(reference);
+
+        // Ouvrir la modale
+        $('#myModal').show();
+    });
+});
+
+</script>
