@@ -183,7 +183,7 @@ select {
     width: 100% !important;
     padding: 8px 10px !important;
     border: 1px solid black;
-    background-image: url(./dist/images/arrow-down-solid.svg);
+    background-image: url(./assets/icones/arrow-down-solid.svg);
     background-position: calc(100% - 10px);
     background-repeat: no-repeat;
 }
@@ -210,7 +210,7 @@ select:focus {
 
 select.active_select {
     
-    background-image: url(./dist/images/arrow-up-solid.svg);
+    background-image: url(./assets/icones/arrow-up-solid.svg);
     background-position: calc(100% - 10px);
    
 }
@@ -373,7 +373,7 @@ button.disabled_load_more_btn{
 
 button.load_more_btn:hover {
     color: rgba(255, 0, 0, 0); 
-    background-image: url('./dist/images/camera.svg');
+    background-image: url('./assets/icones/camera.svg');
     background-repeat: no-repeat;
     background-color: #000;
     background-size: 120% 60%;
@@ -918,7 +918,7 @@ position: absolute;
 
     display: none;
     background-color: rgba(15, 15, 15, 0.6);
-    background-image: url("./dist/images/spinner.svg");
+    background-image: url("./assets/icones/spinner.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 50% 50% !important;
@@ -1135,14 +1135,14 @@ position: absolute;
 
 .modal_header::before{
   
-    content: url('partials/layouts/images/contact.png');
+    content: url('assets/images/contact.png');
     position: absolute;
     right: -140px;
     
 }
 .modal_header::after{
   
-    content: url('partials/layouts/images/contact.png'); 
+    content: url('assets/images/contact.png'); 
     position: absolute;
     top:80px;
     right: -185px;
