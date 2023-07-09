@@ -14,9 +14,9 @@ function theme_styles_scripts(){
     wp_enqueue_script('boostrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js', array('jquery', 'popper'), 1, true);
 
     // Enqueue lightbox Script
-	wp_enqueue_script( 'theme-lightbox-script', get_theme_file_uri( '/dist/js/lightbox.js' ), array( 'jquery' ), null, true );
+	wp_enqueue_script( 'theme-lightbox-script', get_theme_file_uri( '/js/lightbox.js' ), array( 'jquery' ), null, true );
     // Enqueue Custom Script
-	wp_enqueue_script( 'theme-custom-script', get_theme_file_uri( '/dist/js/custom-scripts.js' ), array( 'jquery' ), null, true );
+	wp_enqueue_script( 'theme-custom-script', get_theme_file_uri( '/js/custom-scripts.js' ), array( 'jquery' ), null, true );
 
 }
 add_action('wp_enqueue_scripts', 'theme_styles_scripts');
@@ -28,8 +28,8 @@ add_action('wp_enqueue_scripts', 'theme_styles_scripts');
  */
 function ajax_url_variable() {
 
-    wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/dist/js/lightbox.js', array('jquery') );
-    wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/dist/js/custom-scripts.js', array('jquery') );
+    wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/lightbox.js', array('jquery') );
+    wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/custom-scripts.js', array('jquery') );
 
     wp_localize_script( 'ajax-script', 'url_script',
             array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
@@ -204,7 +204,7 @@ function load_more(){
 
         while($ajax_posts->have_posts()) : $ajax_posts->the_post();
 
-            get_template_part('partials/photo_block');
+            get_template_part('template-parts/photo_block.php');
 
         endwhile;
 

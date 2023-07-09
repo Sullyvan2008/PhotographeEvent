@@ -25,7 +25,7 @@ $image_title = get_the_title($image_id);
     <div class="photo_overlay">
 
         <div class="show_photo_icon" data-link="<?php echo get_permalink(get_the_ID()); ?>">
-            <img src="<?php echo get_stylesheet_directory_uri() ;?>/dist/images/eye.svg" alt="Oeil">
+            <img src="<?php echo get_stylesheet_directory_uri() ;?>/assets/icones/eye.svg" alt="Oeil">
         </div>
 
         <div class="show_lightbox_icon lightbox_open" data-post-title="<?php echo $image_title; ?>" 
@@ -34,7 +34,7 @@ $image_title = get_the_title($image_id);
                                                       data-post-term="<?php if($terms_post){ echo $terms_post[0]->name;} ?>" 
                                                       data-image-path="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>">
                 
-            <img src="<?php echo get_stylesheet_directory_uri() ;?>/dist/images/fullscreen.svg" alt="Plein écran">
+            <img src="<?php echo get_stylesheet_directory_uri() ;?>/assets/icones/fullscreen.svg" alt="Plein écran">
                 
         </div>
         <div class="photo_overlay_footer flex_row">

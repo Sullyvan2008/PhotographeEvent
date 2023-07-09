@@ -10,8 +10,8 @@
 	    </main>
 
 	<?php
-    get_template_part( 'partials/modal' );
-	get_template_part( 'partials/lightbox' );
+    get_template_part( 'template-parts/modal.php' );
+	get_template_part( 'template-parts/lightbox.php' );
 	?>
 
 	</div>

@@ -184,7 +184,7 @@ foreach ( $post_types as $key => $post_type ) {
                     while ( $all_photos->have_posts() ) { 
                         $all_photos->the_post();
 
-                        get_template_part( 'partials/photo_block' );
+                        get_template_part( 'template-parts/photo_block.php' );
 
                     };
                 ?>

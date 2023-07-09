@@ -58,7 +58,7 @@
 											                              data-post-term="<?php if($terms_post){ echo $terms_post[0]->name;} ?>" 
 											                              data-image-path="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>">
 		
-								<img src="<?php echo get_stylesheet_directory_uri() ;?>/dist/images/fullscreen.svg" alt="Plein écran">
+								<img src="<?php echo get_stylesheet_directory_uri() ;?>assets/icones/fullscreen.svg" alt="Plein écran">
 		
                             </div>
                             
@@ -100,11 +100,11 @@
 					<div class="single_photo_next_nav">
 
 				        <span class="photo_next_arrow_left">   
-						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_leftb.png" alt="Fléche gauche">');?>
+						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'assets/images/arrow_leftb.png" alt="Flêche gauche">');?>
 						</span>
 
 				        <span class="photo_next_arrow_right">
-							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_rightb.png" alt="Fléche droite">');?>
+							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'assets/images/arrow_rightb.png" alt="Flêche droite">');?>
 						</span>
 
 				    </div>
@@ -137,7 +137,7 @@
 				while ( $related_photo->have_posts() ) { 
 					$related_photo->the_post();
 					
-				    get_template_part( 'partials/photo_block' );
+				    get_template_part( 'template-parts/photo_block.php' );
 
 				};
 				?>

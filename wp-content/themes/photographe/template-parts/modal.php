@@ -22,7 +22,7 @@
         
         <!-- Modal header -->
         <div class="modal_body">
-            <?php echo do_shortcode('[everest_form id="26"]') ;?>
+            <?php echo do_shortcode('[contact-form-7 id="26" title="Contact form 1"]') ;?>
         </div>
         
 
