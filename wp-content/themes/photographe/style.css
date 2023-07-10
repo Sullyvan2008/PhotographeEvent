@@ -393,7 +393,8 @@ button.load_more_btn:hover {
 }
 
 #header-menu a {
-
+    color: black;
+    align-items: center;
     font-family: 'Space Mono' !important;
     font-style: normal;
     font-weight: 400;
@@ -403,6 +404,11 @@ button.load_more_btn:hover {
     text-align: center !important;
     padding-left: 40px
 
+}
+
+li.menu-item {
+    display:flex;
+    align-items: center;
 }
 
 #header-menu a:hover {

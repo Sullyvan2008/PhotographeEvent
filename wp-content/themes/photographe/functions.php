@@ -53,6 +53,14 @@ function after_setup_theme() {
 }
 add_action('after_setup_theme', 'after_setup_theme');
 
+function add_contact_menu_item($items, $args) {
+    if ($args->theme_location == 'header_menu') { 
+        $items .= '<li class="menu-item"><a href="#" class="modal_open">Contact</a></li>';
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_contact_menu_item', 10, 2);
+
 /**
  * 
  * Enable support for logo.
