@@ -12,7 +12,7 @@
 
 <?php
 
-$args = array('post_type' => 'photo',
+$args = array('post_type' => 'photos',
 			  'tax_query' => array(array('taxonomy' => 'format',
 										 'field' => 'slug',
 										 'terms' => 'paysage',
@@ -34,7 +34,7 @@ if ( $banner_photo->have_posts() ){
 }
 wp_reset_query();
 
-$post_types = get_post_types(array('name' => 'photo')); 
+$post_types = get_post_types(array('name' => 'photos')); 
 $taxonomies = array();
 
 foreach ( $post_types as $key => $post_type ) {
@@ -168,7 +168,7 @@ foreach ( $post_types as $key => $post_type ) {
 
                 <?php
 
-                    $args = array('post_type' => 'photo',
+                    $args = array('post_type' => 'photos',
                                   'posts_per_page' => '12',
                                   'orderby' => 'date',
                                   'order' => 'DESC');
@@ -184,7 +184,7 @@ foreach ( $post_types as $key => $post_type ) {
                     while ( $all_photos->have_posts() ) { 
                         $all_photos->the_post();
 
-                        get_template_part( 'template-parts/photo_block.php' );
+                        get_template_part( 'template-parts/photo_block' );
 
                     };
                 ?>

@@ -73,7 +73,7 @@ function disabledLightboxArrow(userAction, hasData = true){
 
 }
 
-/* Function ajax to get prev/next photo *//*
+/* Function ajax to get prev/next photo */
 function ajaxLightboxRequest(data){
 
     $.ajax({

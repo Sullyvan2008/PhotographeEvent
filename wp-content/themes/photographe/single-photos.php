@@ -17,7 +17,7 @@ while ( have_posts() ) :
 	                    'reference' => get_post_meta( get_the_ID(), 'reference', true ));
 	
 	set_query_var( 'post_datas', array( 'taxonomies' => $post_taxonomies, 'metas' => $post_metas ) );
-	get_template_part( 'partials/content-photo' );
+	get_template_part( 'template-parts/content-photo' );
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) {

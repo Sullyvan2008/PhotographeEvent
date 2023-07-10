@@ -21,7 +21,7 @@ if ( have_posts() ) {
 	// Start the Loop.
 	while ( have_posts() ) :
 		the_post();
-		get_template_part( 'template-parts/home.php' );
+		get_template_part( 'template-parts/home' );
 	endwhile;
 
 	// Previous/next page navigation.
@@ -30,7 +30,7 @@ if ( have_posts() ) {
 } else {
 
 	// If no content, include the "No posts found" template.
-	get_template_part( 'template-parts/content.php', 'none' );
+	get_template_part( 'template-parts/content', 'none' );
 }
 
 get_footer();

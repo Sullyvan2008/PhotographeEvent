@@ -100,11 +100,11 @@
 					<div class="single_photo_next_nav">
 
 				        <span class="photo_next_arrow_left">   
-						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'assets/images/arrow_leftb.png" alt="Flêche gauche">');?>
+						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/assets/images/arrow_leftb.png" alt="Flêche gauche">');?>
 						</span>
 
 				        <span class="photo_next_arrow_right">
-							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'assets/images/arrow_rightb.png" alt="Flêche droite">');?>
+							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/assets/images/arrow_rightb.png" alt="Flêche droite">');?>
 						</span>
 
 				    </div>
@@ -118,7 +118,7 @@
 
 				<?php
 
-                $args = array('post_type' => 'photo',
+                $args = array('post_type' => 'photos',
 				              'tax_query' => array(array('taxonomy' => 'categorie',
 							                             'field' => 'slug',
 														 'terms' => $post_datas['taxonomies']['categorie'][0]->slug,
@@ -137,7 +137,7 @@
 				while ( $related_photo->have_posts() ) { 
 					$related_photo->the_post();
 					
-				    get_template_part( 'template-parts/photo_block.php' );
+				    get_template_part( 'template-parts/photo_block' );
 
 				};
 				?>

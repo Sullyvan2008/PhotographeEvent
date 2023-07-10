@@ -38,11 +38,13 @@
         </div>
 
         <span class="lightbox_right_arrow" data-user-action="next">
-			<img src="<?php echo get_stylesheet_directory_uri().'assets/images/arrow_rightw.png';?>" alt="Fléche droite">
+			<img src="<?php echo get_stylesheet_directory_uri().'/assets/images/arrow_rightw.png';?>" alt="Fléche droite">
 		</span>
         
     </div>
 
-    <span class="modal_close_icon dashicons dashicons-no-alt"></span>
+    <span class="modal_close_icon dashicons dashicons-no-alt">
+    <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/close.png';?>" alt="Bouton fermeture">
+    </span>
 
 </div>

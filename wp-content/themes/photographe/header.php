@@ -67,7 +67,11 @@
 ?>
 
 				</div>
+				<li class="menu-item">
+    <a href="#" class="modal_open">Contact</a>
+</li>
 			</nav>
+			
 		</header>
 	</div>
 

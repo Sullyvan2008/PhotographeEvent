@@ -188,7 +188,7 @@ function load_more(){
 
     }
 
-    $ajax_posts = new WP_Query(['post_type' => 'photo',
+    $ajax_posts = new WP_Query(['post_type' => 'photos',
                                 'posts_per_page' => $limit,
                                 'tax_query' => $tax_query,
                                 'orderby' => 'date',
@@ -204,7 +204,7 @@ function load_more(){
 
         while($ajax_posts->have_posts()) : $ajax_posts->the_post();
 
-            get_template_part('template-parts/photo_block.php');
+            get_template_part('template-parts/photo_block');
 
         endwhile;
 

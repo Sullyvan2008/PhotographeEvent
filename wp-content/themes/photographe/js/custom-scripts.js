@@ -31,7 +31,7 @@ function openModal(){
              if(reference){
      
                  //Add the  ref in the form's input
-                 modal.find('.input_reference input').val(reference);
+                 modal.find('#ref-photo-input input').val(reference);
                 
              }
      
