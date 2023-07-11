@@ -24,9 +24,6 @@ if ( have_posts() ) {
 		get_template_part( 'template-parts/home' );
 	endwhile;
 
-	// Previous/next page navigation.
-	get_template_part( 'partials/pagination' );
-
 } else {
 
 	// If no content, include the "No posts found" template.
