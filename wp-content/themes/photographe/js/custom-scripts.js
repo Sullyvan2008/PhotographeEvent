@@ -26,12 +26,12 @@ function openModal(){
          }else{
      
              //Get the ref of the image on single page
-             reference = $('.single_photo_ref').attr('data-reference');
+             var reference = $('.single_photo_ref').data('reference');
      
              if(reference){
      
                  //Add the  ref in the form's input
-                 modal.find('#ref-photo-input input').val(reference);
+                 modal.find('#ref-photo-input').val(reference);
                 
              }
      
