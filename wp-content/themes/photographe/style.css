@@ -1101,11 +1101,11 @@ position: absolute;
 
 .modal_content {
     background-color: #fefefe;
-    margin: 9% auto; /* 9% from the top and centered */
+    margin: 4% auto; /* 9% from the top and centered */
     padding: 20px 0;
     border: 5px solid black;
     width: 28%; /* Could be more or less, depending on screen size */
-    height: 80%;
+    height: 85%;
     position: relative;
     overflow-x: hidden;
 }
@@ -1151,28 +1151,24 @@ position: absolute;
 
 }
 
-.modal_body .wpcf7-form{
-    width: 50%;
-   
-}
 
-.modal_body > .wpcf7-form-control-wrap input{
+.wpcf7-form-control-wrap .champs,
+.wpcf7-form-control-wrap .champs-message{
+    width:263px;
     margin-bottom: 0px !important;
     border: 1px solid #B8BBC2;
     border-radius: 8px;
     height: 40px;
 }
 
-.modal_body > .wpcf7-form-control input{
-    border-radius: 0px;
+.wpcf7-form-control-wrap .champs-message{
+    margin-bottom: 0px !important;
+    border: 1px solid #B8BBC2;
+    border-radius: 8px;
+    height: 210px;
 }
 
-.modal_body > .wpcf7-form-control .has-spinner .wpcf7-submit {
-    display: flex  !important;
-    justify-content: center  !important;
-}
-
-.wpcf7-form-control .has-spinner .wpcf7-submit{
+.wpcf7-submit{
     font-family: 'Space Mono' !important;
     color: black !important; 
     font-size: 14px !important;
@@ -1191,7 +1187,7 @@ position: absolute;
     margin-top: 20px;
 }
 
-.wpcf7-form-control .has-spinner .wpcf7-submit:hover {
+.wpcf7-submit:hover {
     color: white !important;  
     background-position: left bottom !important;
 }
