@@ -96,7 +96,17 @@ function theme_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
-
+/*
+ *
+ * Action with priority 20.
+ * We take wallstreet-style out of the queue and we enter the child's style.css
+ * 
+ */
+function style_theme_enfant() {
+    wp_dequeue_style('wallstreet-style', get_stylesheet_uri() );
+    wp_enqueue_style('enfant-style', get_stylesheet_uri() );
+}
+add_action('wp_enqueue_scripts', 'style_theme_enfant', 20);
 
 /*
  *
